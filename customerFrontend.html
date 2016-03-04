@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise3 - Webstore</title>
+    <script type="text/javascript"
+            src="formChecker.js">
+    </script>
+    <link href="style.css"
+          rel="stylesheet"
+          type="text/css">
+  </head>
+  <body>
+    <form id="myForm" action="customerBackend.php" method="post">
+      Username: <input type="text" id="un"><br>
+      Password: <input type="text" name="password" id="pw"><br><br>
+
+      Welcome to the store of Haram </br>
+      Enter the quantiy you want of each item (0 or more): <br><br>
+      Bacon: <input type="text" name ="q1" id="i1"><br>
+      Cigarettes: <input type="text" name="q2" id="i2"><br>
+      Booze: <input type="text" name="q3" id="i3"><br><br>
+
+      Which type of shipping would you like?<br>
+
+      <input type="radio" name = "shipping" id="q1" value="0"> Free 7 day<br>
+      <input type="radio" name = "shipping" id="q2" value="50"> $50.00 over night<br>
+      <input type="radio" name = "shipping" id="q3" value="5"> $5.00 three day<br>
+
+    </form>
+
+    <button onclick="validate()">validate</button>
+    <button onclick="resetForm()">Reset</button> <br>
+    <img src="http://i.imgur.com/dTGZBmL.jpg">
+  </body>
+</html>
